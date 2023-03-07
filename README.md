@@ -32,10 +32,14 @@ The [excess kurtosis][kurtosis] for a [discrete uniform][discrete-uniform-distri
 
 <!-- <equation class="equation" label="eq:discrete_uniform_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" alt="Excess kurtosis for a discrete uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" data-equation="eq:discrete_uniform_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" data-equation="eq:discrete_uniform_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/kurtosis/docs/img/equation_discrete_uniform_kurtosis.svg" alt="Excess kurtosis for a discrete uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -221,7 +225,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
