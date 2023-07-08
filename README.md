@@ -33,7 +33,7 @@ The [excess kurtosis][kurtosis] for a [discrete uniform][discrete-uniform-distri
 <!-- <equation class="equation" label="eq:discrete_uniform_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" alt="Excess kurtosis for a discrete uniform distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}
+\mathop{\mathrm{Kurt}}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" data-equation="eq:discrete_uniform_kurtosis">
@@ -196,6 +196,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -238,6 +243,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/tree/esm
 [branches-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/main/LICENSE
 
 [discrete-uniform-distribution]: https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
