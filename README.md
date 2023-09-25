@@ -69,7 +69,7 @@ where `n = b - a + 1`.
 ## Usage
 
 ```javascript
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-kurtosis@esm/index.mjs';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-kurtosis@v0.1.0-esm/index.mjs';
 ```
 
 #### kurtosis( a, b )
@@ -140,7 +140,7 @@ v = kurtosis( -1, -2 );
 <script type="module">
 
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-kurtosis@esm/index.mjs';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-kurtosis@v0.1.0-esm/index.mjs';
 
 var randa = randint.factory( 0, 10 );
 var randb = randint.factory();
