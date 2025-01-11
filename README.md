@@ -174,6 +174,101 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/discrete-uniform/kurtosis.h"
+```
+
+#### stdlib_base_dists_discrete_uniform_kurtosis( a, b )
+
+Returns the [excess kurtosis][kurtosis] of a [discrete uniform][discrete-uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
+
+```c
+double out = stdlib_base_dists_discrete_uniform_kurtosis( 0, 1 );
+// returns -2.0
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] int32_t` minimum support.
+-   **b**: `[in] int32_t` maximum support.
+
+```c
+double stdlib_base_dists_discrete_uniform_kurtosis( const int32_t a, const int32_t b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/discrete-uniform/kurtosis.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    int32_t a;
+    int32_t b;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        a = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        b = stdlib_base_round( random_uniform( 0.0, 10.0 ) ) + a;
+        y = stdlib_base_dists_discrete_uniform_kurtosis( a, b );
+        printf( "a: %d, b: %d, Kurt(X;a,b): %lf\n", a, b, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
@@ -209,9 +304,14 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -254,6 +354,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/tree/esm
 [esm-readme]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dists-discrete-uniform-kurtosis/main/LICENSE
 
 [discrete-uniform-distribution]: https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
