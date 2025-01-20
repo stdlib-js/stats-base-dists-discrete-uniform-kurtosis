@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-11)
+## Unreleased (2025-01-20)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`f75a0ce`](https://github.com/stdlib-js/stdlib/commit/f75a0cef6a3112b166dba04c13bada9763cec350) - **chore:** use excess kurtosis consistently _(by Philipp Burckhardt)_
 -   [`3c05363`](https://github.com/stdlib-js/stdlib/commit/3c0536379084ed42aa48d23a26daf3a51e1efb33) - **feat:** add C implementation for `stats/base/dists/discrete-uniform/kurtosis` [(#4568)](https://github.com/stdlib-js/stdlib/pull/4568) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
 
 </details>
