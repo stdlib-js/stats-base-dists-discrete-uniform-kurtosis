@@ -89,7 +89,8 @@
     "discrete",
     "probability",
     "prob",
-    "uniform"
+    "uniform",
+    "univariate"
   ],
   "funding": {
     "type": "opencollective",
